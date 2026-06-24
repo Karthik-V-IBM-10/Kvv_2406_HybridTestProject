@@ -1,0 +1,27 @@
+version: "1.0"
+projectName: Kvv_2406_HybridTestProject
+runtimes:
+- runtimeAlias: Cloud Designtime
+  assets:
+  - name: testWorkflow
+    type: workflow
+    uid: flab81e8ed16e8429e95f62c052e0ff82a
+    stepId: a0
+    reference: services:add3Ints
+  - name: testWorkflow
+    type: workflow
+    uid: flab81e8ed16e8429e95f62c052e0ff82a
+    stepId: a2
+    reference: project.kvv_2406_hybridtest.integrations:refDaf
+- runtimeAlias: kvv_2406_FedTest
+  assets:
+  - name: testWorkflow
+    type: workflow
+    uid: flab81e8ed16e8429e95f62c052e0ff82a
+    stepId: a1
+    reference: services:add3Ints
+  - name: testWorkflow
+    type: workflow
+    uid: flab81e8ed16e8429e95f62c052e0ff82a
+    stepId: a3
+    reference: project.kvv_2406_hybridtest.integrations:refDaf
